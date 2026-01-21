@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "KOROP",
   description: "Personal NFC Identity & Access System",
 };
@@ -13,12 +14,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* GLOBAL BACKGROUND */}
         <div className="background">
           <div className="light-spot" />
         </div>
 
-        {/* APP CONTENT */}
         <div className="app-content">{children}</div>
       </body>
     </html>
