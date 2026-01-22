@@ -1,4 +1,13 @@
-export const products = [
+export type Product = {
+  id: string;
+  edition: string;
+  title: string;
+  description: string;
+  image: string;
+  price: number;
+};
+
+export const products: Product[] = [
   {
     id: "standard",
     edition: "Standard Edition",
@@ -6,6 +15,7 @@ export const products = [
     description:
       "A secure personal NFC chip designed for identity verification, access control and future decentralized integrations.",
     image: "/chip-placeholder.png",
+    price: 49,
   },
   {
     id: "pro",
@@ -14,5 +24,6 @@ export const products = [
     description:
       "Advanced NFC chip with enhanced security layers and extended compatibility for enterprise and private use.",
     image: "/chip-placeholder.png",
+    price: 99,
   },
 ];
